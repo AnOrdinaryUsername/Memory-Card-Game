@@ -1,2 +1,4 @@
-export * from './CardDeck';
-export * from './Header';
+import CardDeck from './CardDeck';
+import Header from './Header';
+
+export { CardDeck, Header };
