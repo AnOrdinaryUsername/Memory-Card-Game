@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import { Header } from '../components/organisms';
+import GlobalStyles from './GlobalStyles';
 
 const App = () => {
     const [score, setScore] = useState(0);
+    const [highScore, setHighScore] = useState(0);
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
@@ -13,6 +15,9 @@ const App = () => {
         });
 
         if (cards.hasDuplicates()) {
+            if (score > highScore) {
+                setHighScore(score);
+            }
             setScore(0);
         } else {
             setScore((prevScore) => prevScore + 1);
@@ -25,9 +30,10 @@ const App = () => {
 
     return (
         <>
+            <GlobalStyles />
             <Header userScore={score} />
             <main>
-                <CardDeck onClick={addCardToRecord} />
+                <p>test</p>
             </main>
         </>
     );
