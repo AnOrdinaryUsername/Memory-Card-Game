@@ -1,5 +1,5 @@
-import { faGithub, faMoon, faSun } from '@fortawesome/free-brands-svg-icons';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faInfoCircle, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Anchor, Button, Title } from '../atoms';
@@ -58,7 +58,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faInfoCircle} />
                 </Button>
                 <Anchor
-                    ariaLabel="View the source code repository."
+                    ariaLabel="View the source code repository"
                     link="https://github.com/AnOrdinaryUsername/Memory-Card-Game"
                 >
                     <FontAwesomeIcon icon={faGithub} />
