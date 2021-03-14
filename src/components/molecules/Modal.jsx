@@ -1,7 +1,7 @@
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Button, Title } from '../atoms';
 
 const Overlay = styled.div`
@@ -22,25 +22,48 @@ const Background = styled.div`
     backdrop-filter: blur(15px);
 `;
 
+const modalEnter = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+`;
+
 const ModalContainer = styled.div`
     padding: 4.8rem;
     position: relative;
     z-index: 1;
     background: white;
-    max-width: 350px;
+    border-radius: 0.8rem;
+    max-width: 60rem;
     width: 100%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin: 5rem auto;
+    animation: ${modalEnter} 0.3s cubic-bezier(0.07, 0.7, 0.69, 1.01) calc(1 * 0.05s) 1 backwards;
+
+    & .exit-button {
+        position: absolute;
+        top: 0;
+        left: 91%;
+        border-radius: inherit;
+        padding: 0.8rem 1.6rem;
+        font-size: 2.4rem;
+    }
+
+    & * {
+        color: black;
+    }
 `;
 
 const Modal = ({ children, onClick, title }) => {
     return (
         <Overlay>
-            <Background></Background>
+            <Background onClick={onClick}></Background>
             <ModalContainer role="dialog">
-                <Button ariaLabel="Close instructions modal" onClick={onClick}>
+                <Button
+                    ariaLabel="Close instructions modal"
+                    className="exit-button"
+                    onClick={onClick}
+                >
                     <FontAwesomeIcon icon={faTimes} />
                 </Button>
                 <Title>{title}</Title>
