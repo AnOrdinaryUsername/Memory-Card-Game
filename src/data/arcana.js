@@ -10,48 +10,59 @@ import priestess from '../images/P5_Priestess_arcana_cooperation.png';
 import strength from '../images/P5_Strength_Arcana.png';
 import world from '../images/P5_World_Arcana.png';
 
-const arcana = [
+let arcana = [
     {
+        id: 'chariot',
         src: chariot,
         alt: 'The Chariot tarot card',
     },
     {
+        id: 'emperor',
         src: emperor,
         alt: 'The Emperor tarot card',
     },
     {
+        id: 'empress',
         src: empress,
         alt: 'The Empress tarot card',
     },
     {
+        id: 'fool',
         src: fool,
         alt: 'The Fool tarot card',
     },
     {
+        id: 'hermit',
         src: hermit,
         alt: 'The Hermit tarot card',
     },
     {
+        id: 'judgement',
         src: judgement,
         alt: 'The Judgement tarot card',
     },
     {
+        id: 'justice',
         src: justice,
         alt: 'The Justice tarot card',
     },
     {
+        id: 'magician',
         src: magician,
         alt: 'The Magician tarot card',
     },
     {
+        id: 'priestess',
         src: priestess,
         alt: 'The Priestess tarot card',
     },
     {
+        id: 'strength',
         src: strength,
         alt: 'The Strength tarot card',
     },
     {
+        id: 'world',
         src: world,
         alt: 'The World tarot card',
     },

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Header } from '../components/organisms';
+import { ScoreBoard } from '../components/molecules';
+import { CardDeck, Header } from '../components/organisms';
 import GlobalStyles from './GlobalStyles';
 
 const App = () => {
@@ -14,15 +15,18 @@ const App = () => {
             },
         });
 
-        if (cards.hasDuplicates()) {
-            if (score > highScore) {
-                setHighScore(score);
+        if (cards.length !== 0) {
+            if (cards.hasDuplicates()) {
+                if (score > highScore) {
+                    setHighScore(score);
+                }
+                setCards([]);
+                setScore(0);
+            } else {
+                setScore((prevScore) => prevScore + 1);
             }
-            setScore(0);
-        } else {
-            setScore((prevScore) => prevScore + 1);
         }
-    }, [cards]);
+    }, [cards]); // eslint-disable-line react-hooks/exhaustive-deps
 
     const addCardToRecord = ({ target }) => {
         setCards([...cards, target.id]);
@@ -31,9 +35,10 @@ const App = () => {
     return (
         <>
             <GlobalStyles />
-            <Header userScore={score} />
+            <Header />
             <main>
-                <p>test</p>
+                <ScoreBoard score={score} highScore={highScore} />
+                <CardDeck onClick={addCardToRecord} />
             </main>
         </>
     );
