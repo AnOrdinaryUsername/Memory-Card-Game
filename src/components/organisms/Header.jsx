@@ -2,7 +2,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faInfoCircle, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
-import arcana from '../../data/arcana';
+import { totalCardCount } from '../../data/arcana';
 import { Anchor, Button, Title } from '../atoms';
 import { ButtonGroup, Modal } from '../molecules';
 
@@ -75,7 +75,7 @@ const Header = () => {
                 <Modal title="How to Play" onClick={changeModalVisibility}>
                     <p>
                         The goal of this game is to practice your memory skills, remembering as many
-                        cards as you can. Once you reach a score of {arcana.length}, you win!
+                        cards as you can. Once you reach a score of {totalCardCount}, you win!
                     </p>
                     <p>
                         Click any of the tarot cards and you'll receive a point. But be careful,

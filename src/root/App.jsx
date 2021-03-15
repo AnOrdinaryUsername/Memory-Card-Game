@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { ScoreBoard } from '../components/molecules';
+import { ScoreBoard, WinScreen } from '../components/molecules';
 import { CardDeck, Header } from '../components/organisms';
+import { totalCardCount } from '../data/arcana';
 import GlobalStyles from './GlobalStyles';
 
 const App = () => {
@@ -32,13 +33,23 @@ const App = () => {
         setCards([...cards, target.id]);
     };
 
+    const playAgain = () => {
+        setScore(0);
+        setCards([]);
+    };
+
     return (
         <>
             <GlobalStyles />
             <Header />
             <main>
-                <ScoreBoard score={score} highScore={highScore} />
-                <CardDeck onClick={addCardToRecord} />
+                {score !== totalCardCount && (
+                    <>
+                        <ScoreBoard score={score} highScore={highScore} />
+                        <CardDeck onClick={addCardToRecord} />
+                    </>
+                )}
+                {score === totalCardCount && <WinScreen onClick={playAgain} />}
             </main>
         </>
     );
