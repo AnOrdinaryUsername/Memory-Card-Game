@@ -68,4 +68,6 @@ let arcana = [
     },
 ];
 
+export const totalCardCount = arcana.length;
+
 export default arcana;
