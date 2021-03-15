@@ -1,10 +1,17 @@
+import styled from 'styled-components';
 import { Image } from '../atoms';
 
-const Card = ({ src, alt }) => {
+const CardContainer = styled.div`
+    cursor: pointer;
+    line-height: 0;
+    box-shadow: var(--card-shadow);
+`;
+
+const Card = (props) => {
     return (
-        <div>
-            <Image src={src} alt={alt} />
-        </div>
+        <CardContainer tabIndex={props.tabIndex}>
+            <Image {...props} />
+        </CardContainer>
     );
 };
 
