@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b457f46.chunk.css",
-    "main.js": "/static/js/main.68d4f75b.chunk.js",
-    "main.js.map": "/static/js/main.68d4f75b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.495e25ea.js",
-    "runtime-main.js.map": "/static/js/runtime-main.495e25ea.js.map",
-    "static/js/2.798ea9d6.chunk.js": "/static/js/2.798ea9d6.chunk.js",
-    "static/js/2.798ea9d6.chunk.js.map": "/static/js/2.798ea9d6.chunk.js.map",
-    "static/js/3.d82285a6.chunk.js": "/static/js/3.d82285a6.chunk.js",
-    "static/js/3.d82285a6.chunk.js.map": "/static/js/3.d82285a6.chunk.js.map",
+    "main.js": "/static/js/main.ef4ee8a7.chunk.js",
+    "main.js.map": "/static/js/main.ef4ee8a7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a5da1258.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a5da1258.js.map",
+    "static/js/2.ded76149.chunk.js": "/static/js/2.ded76149.chunk.js",
+    "static/js/2.ded76149.chunk.js.map": "/static/js/2.ded76149.chunk.js.map",
+    "static/js/3.6b82e45f.chunk.js": "/static/js/3.6b82e45f.chunk.js",
+    "static/js/3.6b82e45f.chunk.js.map": "/static/js/3.6b82e45f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5b457f46.chunk.css.map": "/static/css/main.5b457f46.chunk.css.map",
-    "static/js/2.798ea9d6.chunk.js.LICENSE.txt": "/static/js/2.798ea9d6.chunk.js.LICENSE.txt"
+    "static/js/2.ded76149.chunk.js.LICENSE.txt": "/static/js/2.ded76149.chunk.js.LICENSE.txt",
+    "static/media/P5_Chariot_arcana_cooperation.6b376617.png": "/static/media/P5_Chariot_arcana_cooperation.6b376617.png",
+    "static/media/P5_Emperor_arcana_cooperation.b0be08d2.png": "/static/media/P5_Emperor_arcana_cooperation.b0be08d2.png",
+    "static/media/P5_Empress_arcana_cooperation.70ec9ef5.png": "/static/media/P5_Empress_arcana_cooperation.70ec9ef5.png",
+    "static/media/P5_Fool_arcana_cooperation.3e41ee38.png": "/static/media/P5_Fool_arcana_cooperation.3e41ee38.png",
+    "static/media/P5_Hermit_Arcana.e08c76f4.png": "/static/media/P5_Hermit_Arcana.e08c76f4.png",
+    "static/media/P5_Judgement_Arcana.62025d7c.png": "/static/media/P5_Judgement_Arcana.62025d7c.png",
+    "static/media/P5_Justice_Arcana.a144a4f2.png": "/static/media/P5_Justice_Arcana.a144a4f2.png",
+    "static/media/P5_Magician_arcana_cooperation.de147a79.png": "/static/media/P5_Magician_arcana_cooperation.de147a79.png",
+    "static/media/P5_Priestess_arcana_cooperation.fadd7880.png": "/static/media/P5_Priestess_arcana_cooperation.fadd7880.png",
+    "static/media/P5_Strength_Arcana.ad59db74.png": "/static/media/P5_Strength_Arcana.ad59db74.png",
+    "static/media/P5_World_Arcana.ddac0b70.png": "/static/media/P5_World_Arcana.ddac0b70.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.495e25ea.js",
-    "static/js/2.798ea9d6.chunk.js",
-    "static/css/main.5b457f46.chunk.css",
-    "static/js/main.68d4f75b.chunk.js"
+    "static/js/runtime-main.a5da1258.js",
+    "static/js/2.ded76149.chunk.js",
+    "static/js/main.ef4ee8a7.chunk.js"
   ]
 }
