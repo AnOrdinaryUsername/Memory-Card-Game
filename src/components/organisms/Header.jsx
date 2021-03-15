@@ -2,6 +2,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faInfoCircle, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import arcana from '../../data/arcana';
 import { Anchor, Button, Title } from '../atoms';
 import { ButtonGroup, Modal } from '../molecules';
 
@@ -72,8 +73,18 @@ const Header = () => {
             </ButtonGroup>
             {!isHidden && (
                 <Modal title="How to Play" onClick={changeModalVisibility}>
-                    <p>Click the cards and earn a score!</p>
-                    {/* Maybe add a gif/mp4 for easier visualization */}
+                    <p>
+                        The goal of this game is to practice your memory skills, remembering as many
+                        cards as you can. Once you reach a score of {arcana.length}, you win!
+                    </p>
+                    <p>
+                        Click any of the tarot cards and you'll receive a point. But be careful,
+                        clicking a card you already clicked on resets your score.
+                    </p>
+                    <p>Simple, right? Now go on and use that noggin of yours!</p>
+                    <p>
+                        <small>P.S. you get a super special prize if you win 😉</small>
+                    </p>
                 </Modal>
             )}
         </header>
