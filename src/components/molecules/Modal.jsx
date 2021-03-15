@@ -12,6 +12,7 @@ const Overlay = styled.div`
     bottom: 0;
     left: 0;
     overflow: auto;
+    z-index: 1;
 `;
 
 const Background = styled.div`
@@ -30,27 +31,47 @@ const modalEnter = keyframes`
 `;
 
 const ModalContainer = styled.div`
-    padding: 4.8rem;
+    padding: 3.2rem;
     position: relative;
     z-index: 1;
     background: white;
     border-radius: 0.8rem;
-    max-width: 60rem;
+    max-width: 30rem;
     width: 100%;
-    margin: 5rem auto;
+    margin: 5rem auto 0;
     animation: ${modalEnter} 0.3s cubic-bezier(0.07, 0.7, 0.69, 1.01) calc(1 * 0.05s) 1 backwards;
+
+    @media (min-width: 576px) {
+        padding: 4.8rem;
+        max-width: 60rem;
+    }
 
     & .exit-button {
         position: absolute;
         top: 0;
-        left: 91%;
+        left: 84%;
         border-radius: inherit;
         padding: 0.8rem 1.6rem;
         font-size: 2.4rem;
     }
 
+    @media (min-width: 576px) {
+        & .exit-button {
+            left: 91%;
+        }
+    }
+
+    & h1 {
+        font-weight: 500;
+        margin-bottom: 2.8rem;
+    }
+
+    & p:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
     & * {
-        color: black;
+        color: hsl(0, 0%, 25%);
     }
 `;
 
