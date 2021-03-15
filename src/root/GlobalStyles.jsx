@@ -89,6 +89,8 @@ const GlobalStyles = createGlobalStyle`
         --font-color: hsl(0, 0%, 25%);
         --heading-color: hsl(0, 0%, 26%);
         --card-shadow: 0px 0px 10px hsl(204deg 15% 78%);
+        --win-bg-color: hsl(205, 50%, 34%);
+        --win-font-color: hsl(0, 0%, 96%);
     }
 
     [data-theme='dark'] {
@@ -96,6 +98,8 @@ const GlobalStyles = createGlobalStyle`
         --font-color: hsl(0, 0%, 96%);
         --heading-color: hsl(0, 0%, 100%);
         --card-shadow: none;
+        --win-bg-color: hsl(180, 45%, 29%);
+        --win-font-color: hsl(0, 0%, 96%);
     }
 
     html {
@@ -176,6 +180,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     #root {
+        display: flex;
+        flex-direction: column;
         height: 100%;
     }
 `;
