@@ -85,7 +85,7 @@ approach, combining CSS and JS in the same file using styled-components.
 
 A storage area for all tarot cards. We map over `arcana.js` in `/src/components/organisms/CardDeck.jsx`.
 
-### Root
+#### Root
 
-As the top most component to many React projects, `App.jsx` is the starting point for all our code.
+As the top most component in many React projects, `App.jsx` is the starting point for all our code.
 Along with that, `GlobalStyles.jsx` contains a CSS Reset and other default styles.
