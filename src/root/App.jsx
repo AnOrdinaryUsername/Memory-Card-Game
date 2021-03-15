@@ -47,7 +47,6 @@ const App = () => {
                     <>
                         <ScoreBoard score={score} highScore={highScore} />
                         <CardDeck onClick={addCardToRecord} />
-                        <button onClick={() => setScore(totalCardCount)}>Instant Win</button>
                     </>
                 )}
                 {score === totalCardCount && <WinScreen onClick={playAgain} />}
