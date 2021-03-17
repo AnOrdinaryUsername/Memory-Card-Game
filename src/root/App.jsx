@@ -26,7 +26,6 @@ const App = () => {
 
     useEffect(() => {
         if (cards.hasDuplicates() && score > highScore) {
-            console.log('high');
             setHighScore(score);
         }
     }, [cards, score, highScore]);
