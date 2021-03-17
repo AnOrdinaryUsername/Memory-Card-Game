@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/Memory-Card-Game/static/js/main.3f9b509c.chunk.js",
-    "main.js.map": "/Memory-Card-Game/static/js/main.3f9b509c.chunk.js.map",
-    "runtime-main.js": "/Memory-Card-Game/static/js/runtime-main.1b4c0394.js",
-    "runtime-main.js.map": "/Memory-Card-Game/static/js/runtime-main.1b4c0394.js.map",
-    "static/js/2.91785263.chunk.js": "/Memory-Card-Game/static/js/2.91785263.chunk.js",
-    "static/js/2.91785263.chunk.js.map": "/Memory-Card-Game/static/js/2.91785263.chunk.js.map",
-    "static/js/3.6b82e45f.chunk.js": "/Memory-Card-Game/static/js/3.6b82e45f.chunk.js",
-    "static/js/3.6b82e45f.chunk.js.map": "/Memory-Card-Game/static/js/3.6b82e45f.chunk.js.map",
+    "main.js": "/Memory-Card-Game/static/js/main.56ed2f3e.chunk.js",
+    "main.js.map": "/Memory-Card-Game/static/js/main.56ed2f3e.chunk.js.map",
+    "runtime-main.js": "/Memory-Card-Game/static/js/runtime-main.61f78ea2.js",
+    "runtime-main.js.map": "/Memory-Card-Game/static/js/runtime-main.61f78ea2.js.map",
+    "static/js/2.20509507.chunk.js": "/Memory-Card-Game/static/js/2.20509507.chunk.js",
+    "static/js/2.20509507.chunk.js.map": "/Memory-Card-Game/static/js/2.20509507.chunk.js.map",
+    "static/js/3.02aa86dc.chunk.js": "/Memory-Card-Game/static/js/3.02aa86dc.chunk.js",
+    "static/js/3.02aa86dc.chunk.js.map": "/Memory-Card-Game/static/js/3.02aa86dc.chunk.js.map",
     "index.html": "/Memory-Card-Game/index.html",
-    "static/js/2.91785263.chunk.js.LICENSE.txt": "/Memory-Card-Game/static/js/2.91785263.chunk.js.LICENSE.txt",
+    "static/js/2.20509507.chunk.js.LICENSE.txt": "/Memory-Card-Game/static/js/2.20509507.chunk.js.LICENSE.txt",
     "static/media/P5_Chariot_arcana_cooperation.6b376617.png": "/Memory-Card-Game/static/media/P5_Chariot_arcana_cooperation.6b376617.png",
     "static/media/P5_Emperor_arcana_cooperation.b0be08d2.png": "/Memory-Card-Game/static/media/P5_Emperor_arcana_cooperation.b0be08d2.png",
     "static/media/P5_Empress_arcana_cooperation.70ec9ef5.png": "/Memory-Card-Game/static/media/P5_Empress_arcana_cooperation.70ec9ef5.png",
@@ -23,8 +23,8 @@
     "static/media/P5_World_Arcana.ddac0b70.png": "/Memory-Card-Game/static/media/P5_World_Arcana.ddac0b70.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1b4c0394.js",
-    "static/js/2.91785263.chunk.js",
-    "static/js/main.3f9b509c.chunk.js"
+    "static/js/runtime-main.61f78ea2.js",
+    "static/js/2.20509507.chunk.js",
+    "static/js/main.56ed2f3e.chunk.js"
   ]
 }
