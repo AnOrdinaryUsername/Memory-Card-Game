@@ -9,25 +9,27 @@ const App = () => {
     const [highScore, setHighScore] = useState(0);
     const [cards, setCards] = useState([]);
 
-    useEffect(() => {
-        Object.assign(Array.prototype, {
-            hasDuplicates() {
-                return new Set(this).size !== this.length;
-            },
-        });
+    Object.assign(Array.prototype, {
+        hasDuplicates() {
+            return new Set(this).size !== this.length;
+        },
+    });
 
-        if (cards.length !== 0) {
-            if (cards.hasDuplicates()) {
-                if (score > highScore) {
-                    setHighScore(score);
-                }
-                setCards([]);
-                setScore(0);
-            } else {
-                setScore((prevScore) => prevScore + 1);
-            }
+    useEffect(() => {
+        if (cards.hasDuplicates()) {
+            setCards([]);
+            setScore(0);
+        } else {
+            setScore(cards.length);
         }
-    }, [cards]); // eslint-disable-line react-hooks/exhaustive-deps
+    }, [cards]);
+
+    useEffect(() => {
+        if (cards.hasDuplicates() && score > highScore) {
+            console.log('high');
+            setHighScore(score);
+        }
+    }, [cards, score, highScore]);
 
     const addCardToRecord = ({ target }) => {
         setCards([...cards, target.id]);
